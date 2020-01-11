@@ -3,7 +3,6 @@
         <app-navbar></app-navbar>
         <div class="container-fluid page-body-wrapper">
             <app-sidebar></app-sidebar>
-            <!--<app-dashboard></app-dashboard>-->
             <router-view></router-view>
         </div>
         <app-footer></app-footer>
@@ -15,15 +14,12 @@
     import navbarCustom from "./components/common/navbarCustom";
     import sidebarCustom from "./components/common/sidebarCustom";
     import footerCustom from "./components/common/footerCustom";
-    /*import dashboard from "./components/pages/dashboard";*/
-
     export default {
         name: 'app',
         components: {
             "app-navbar": navbarCustom,
             'app-sidebar': sidebarCustom,
             "app-footer": footerCustom,
-            /*"app-dashboard": dashboard*/
         }
     }
 </script>
