@@ -1,5 +1,6 @@
 <template>
-    <div class="main-panel">
+    <div class="main-panel" id="chartId">
+        {{forceRerender()}}
         <div class="content-wrapper">
             <div class="page-header">
                 <h3 class="page-title"> Chart-js </h3>
@@ -68,9 +69,19 @@
     </div>
 </template>
 <script>
-    /*import chart from '../../../public/js/chart'*/
+    import chart from "../../../public/js/chart";
+    import chartmin from "../../../public/js/Chart.min";
+    /*this js file not show devTools but work perfectly */
     export default {
-        name: "charts"
+        el: '#chartId',
+        methods: {
+            forceRerender: function () {
+                if (!window.location.hash) {
+                    window.location = window.location + '#loaded';
+                    window.location.reload();
+                }
+            }
+        }
     }
 </script>
 
