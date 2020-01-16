@@ -66,14 +66,14 @@
             </div>
         </div>
     </div>
-    <!--<script src="../../assets/js/chart.js"></script>-->
 </template>
-
 <script>
+    /*import chart from '../../../public/js/chart'*/
     export default {
         name: "charts"
     }
 </script>
+
 
 <style scoped>
 
