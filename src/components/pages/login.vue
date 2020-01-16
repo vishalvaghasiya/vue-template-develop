@@ -1,10 +1,5 @@
 <template>
-
     <div class="container-fluid page-body-wrapper full-page-wrapper">
-        <app-navbar></app-navbar>
-        <div>
-            <app-sidebar></app-sidebar>
-        </div>
         <div class="content-wrapper d-flex align-items-center auth">
             <div class="row flex-grow">
                 <div class="col-lg-4 mx-auto">
@@ -35,8 +30,8 @@
                                 <a href="#" class="auth-link text-black">Forgot password?</a>
                             </div>
                             <div class="mb-2">
-                                <button type="button" class="btn btn-block btn-facebook auth-form-btn">
-                                    <i class="mdi mdi-facebook mr-2"></i>Connect using facebook
+                                <button type="button" class="btn btn-block btn-facebook auth-form-btn h-100">
+                                    <i class="mdi mdi-facebook mr-2">Connect using facebook</i>
                                 </button>
                             </div>
                             <div class="text-center mt-4 font-weight-light"> Don't have an account? <a
@@ -47,22 +42,13 @@
                 </div>
             </div>
         </div>
-        <app-footer></app-footer>
     </div>
 </template>
 
 <script>
-    import navbar from "../common/navbarCustom";
-    import sidebar from "../common/sidebarCustom";
-    import footer from "../common/footerCustom";
-
     export default {
         name: "login",
-        components: {
-            "app-navbar":navbar,
-            'app-sidebar' :sidebar,
-            "app-footer":footer
-        }
+        components: {}
     }
 </script>
 
